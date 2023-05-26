@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E3C9;
+}
+
+header {
+    color: white;
+    display: inline;
+}
+
+.banner {
+    font-size: 1.5rem;
+    padding: 3rem;
+    background-color: #B4CFB0;
+    text-align: center;
+}
+
+nav {
+    /* text-align: center; */
+    background-color: #94B49F;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    /* margin: auto; */
+}
+
+nav a {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white; 
+    margin: 1rem;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.horizontal,
+.vertical {
+    display: flex;
+}
+
+.vertical {
+    flex-direction: column;
+    /* margin: 0 auto; */
+}
+
+.content {
+    flex-basis: 75%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+main {
+    background-color: #E5E3C9;
+    padding: 20px;
+    overflow: auto;
+}
+
+main h2 {
+    color: #789395;
+}
+
+aside {
+    flex-basis: 25%;
+    padding-left: 20px;
+}
+
+aside h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content img {
+    width: 100%;
+    max-height: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tombol {
+    background-color: #94B49F;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px; 
+    color: white;
+    background-color: #94B49F;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .horizontal,
+    .vertical {
+    display: block;
+    }
+
+    /*.content,
+    aside {
+        flex-basis: 100%;
+    }*/
+
+    aside {
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white; 
+    }
+    /*
+    nav li {
+        display: block;
+    }
+    */
+}
